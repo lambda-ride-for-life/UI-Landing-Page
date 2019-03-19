@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+
+}
+
+p {
+	margin: 20px 0;
+}
+
+.Who-we-are {
+	font-size: 4rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 2%;
+	max-width: 2000px;
+	font-size: 2.4rem;
+	background-color: #8bc34a;
+}
+
+.container h1,h2,h3,h4,h5,h6 {
+	margin: 10px 0;
+	font-size: 2rem;
+}
+
+.nav-links {
+	display: flex;
+	align-content: right;
+	
+}
+
+a {
+	margin: 20px;
+	
+}
+
+.contributers {
+	margin-bottom: 20px;
+	padding-top: 20px;
+	
+}
+
+.contributers div{
+	display: inline-block;
+	width: 23%;
+	
+}
+
+.contributers img {
+	height: 50px;
+	width: 50px;
+	justify-content: center;
+
+}
+
+.home-container {
+	background-color: #4c6a2e;
+	font-size: 1.6rem;
+	flex-flow: wrap;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.home-container img {
+    height: 500px;
+    width: 70%; 
+    border-radius: 8px;
+}
+
+.about-container {
+	background-color: #4c6a2e;
+	/* width: 800px; */
+	font-size: 1.6rem;
+	flex-flow: wrap;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.about-middle-img{
+	width: 100%;
+	padding: 40px 0;
+}
+
+.content {
+	display: inline-block;
+	width: 50%;
+	padding-bottom: 20px;
+}
+
+.btn {
+	background-color: #78849e;
+	border-radius: 5px;
+
+}
+
+footer p{
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+	max-width: 2000px;
+	font-size: 1.2rem;
+	background-color: #444f63;
+	margin: 0 auto;
+}
