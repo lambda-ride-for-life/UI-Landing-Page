@@ -1,0 +1,316 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  align-items: center;
+  background: #78849e;
+  color: lime;
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+}
+.btn:hover {
+  background: #6a7793;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: 20px 0;
+}
+body,
+html {
+  font-size: 62.5%;
+  height: 100%;
+  margin: 0;
+}
+.container {
+  padding-top: 40px;
+  background-color: #4c6a2e;
+  font-size: 1.6rem;
+  flex-flow: wrap;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .container {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding-top: 10px;
+  }
+}
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+.content {
+  display: inline-block;
+  width: 80%;
+  padding-bottom: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  width: 100%;
+  padding: 0 2%;
+  max-width: 2000px;
+  font-size: 2.4rem;
+  background-color: #8bc34a;
+}
+nav .Who-we-are {
+  font-size: 4rem;
+}
+nav .nav-links {
+  display: flex;
+}
+nav a {
+  flex-flow: row;
+  text-decoration: none;
+  margin: 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 10px;
+  }
+  .nav-links {
+    display: block;
+    margin: 2px;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    position: static;
+  }
+  nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+footer p {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 2000px;
+  font-size: 1.2rem;
+  background-color: #444f63;
+  margin: 0 auto;
+}
+.main-img {
+  width: 90%;
+  border-radius: 8px;
+}
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../img/main-img.jpeg");
+  min-height: 100%;
+}
+.bgimg-2 {
+  background-image: url("../img/pregnant-in-woods.jpg");
+  min-height: 400px;
+}
+.bgimg-3 {
+  background-image: url("../img/main-img.jpeg");
+  min-height: 400px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+@media (max-width: 500px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+.container .contributors div {
+  display: inline-block;
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .container .contributors div {
+    display: block;
+    width: 100%;
+  }
+}
+.container .contributors div img {
+  height: 100px;
+  width: 100px;
+}
+.about-middle-img {
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+}
+@media (max-width: 500px) {
+  .about-middle-img {
+    display: none;
+  }
+}
