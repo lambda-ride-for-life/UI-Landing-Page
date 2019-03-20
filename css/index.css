@@ -162,7 +162,7 @@ html {
 }
 @media (max-width: 800px) {
   .container {
-    padding-top: 80px;
+    padding-top: 100px;
   }
 }
 @media (max-width: 500px) {
@@ -193,21 +193,24 @@ nav {
   z-index: 5000;
   top: 0;
   width: 100%;
-  padding: 0 2%;
+  padding: 0 4%;
   max-width: 2000px;
   font-size: 2.4rem;
   background-color: #8bc34a;
 }
 nav .Who-we-are {
   font-size: 4rem;
+  width: 40%;
 }
 nav .nav-links {
   display: flex;
+  justify-content: space-evenly;
+  width: 45%;
 }
 nav a {
   flex-flow: row;
   text-decoration: none;
-  margin: 20px;
+  margin-left: 5%;
 }
 nav a:hover {
   text-decoration: underline;
@@ -217,6 +220,10 @@ nav a:hover {
     display: flex;
     flex-flow: column;
     padding-bottom: 10px;
+  }
+  nav .Who-we-are {
+    text-align: center;
+    width: 100%;
   }
   .nav-links {
     display: block;
@@ -290,23 +297,47 @@ footer p {
     background-attachment: scroll;
   }
 }
-.container .contributors div {
-  display: inline-block;
-  width: 20%;
+.contributors {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contributors div {
+  padding: 5%;
+  width: 24%;
+}
+.about-cta {
+  margin: 20px 0;
+}
+.about-cta p {
+  margin: 0px 80px 40px;
+}
+@media (max-width: 800px) {
+  .contributors {
+    flex-flow: wrap;
+  }
+  .contributors div {
+    align-self: baseline;
+    padding: 5% ;
+    width: 40%;
+  }
 }
 @media (max-width: 500px) {
-  .container .contributors div {
-    display: block;
+  .contributors {
+    flex-direction: column;
+  }
+  .contributors div {
     width: 100%;
   }
 }
-.container .contributors div img {
+.contributors div img {
   height: 100px;
   width: 100px;
 }
 .about-middle-img {
   height: auto;
   width: 100%;
+  margin: 20px 0;
   border-radius: 8px;
 }
 @media (max-width: 500px) {

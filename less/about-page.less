@@ -1,16 +1,54 @@
-.container .contributors div {
-  display: inline-block;
-  width: 20%;
+.contributors {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+
+  div {
+    padding: 5%;
+    width: 24%;
+    // border: 2px solid red;
+  }
 }
 
-@media @mobile{
-  .container .contributors div{
-    display: block;
-    width: 100%;
+.about-cta {
+  margin: 20px 0;
+
+  p{
+    margin:0px 80px 40px;  
     
   }
 }
-.container .contributors div img {
+
+@media @tablet{
+  .contributors{
+    flex-flow: wrap; 
+    
+
+    div {
+      align-self: baseline;
+      padding: 5% ;
+      width: 40%;
+    }
+    
+  }
+  
+}
+
+@media @mobile{
+  .contributors{
+    flex-direction: column; 
+    
+
+    div {
+      width: 100%;
+    }
+    
+  }
+  
+}
+
+.contributors div img {
   height: 100px;
   width: 100px;
 }
@@ -19,6 +57,7 @@
 .about-middle-img {
   height: auto;
   width: 100%;
+  margin: 20px 0;
   border-radius: 8px;
  
   @media @mobile{

@@ -7,29 +7,29 @@ nav {
     z-index: 5000;
     top: 0;
 	width: 100%;
-	padding: 0 2%;
+	padding: 0 4%;
 	max-width: 2000px;
 	font-size: 2.4rem;
     background-color: #8bc34a;
     
     .Who-we-are {
         font-size: 4rem;
+        width: 40%;
+        
     }
 
     .nav-links{
         display: flex;
-        
-    
+        justify-content: space-evenly;
+        width: 45%;
+        // border: 2px solid red;
     }
 
 
     a {
         flex-flow: row;
         text-decoration: none;
-        margin: 20px;
-        
-        
-        
+        margin-left: 5%;
 
         &:hover {
             text-decoration: underline;
@@ -44,7 +44,10 @@ nav {
         display: flex;
         flex-flow: column;
         padding-bottom: 10px;
-        
+        .Who-we-are{
+            text-align: center;
+            width: 100%;
+        }
     }
 
     .nav-links{
