@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="./css/index.css">
         <title>About</title>
-        <script srt="../components/Textbox.js" async></script>
     </head>
 
     <body>
@@ -27,32 +26,39 @@
                 <h2>Our Team</h2>
                 <div class="contributors">  
 
-                    <div class="contributor">
+                    <div class="contributor-link" data-tab="1">
                         <h3>Zachary Arney</h3>
                         <img src="https://ca.slack-edge.com/T4JUEB3ME-UCEGA17U5-34d1c38e9d73-72" alt="Zachary Arney">
-                        <p></p>
-                        <span>...</span>
+                        <div class="contributor-item  text-hidden" data-tab="1">
+                            Team Lead<br>-<br>Organizing and managing the progress of the app, overseeing deployment and continuous integration and pitching in where needed.</div><br>
+                        <span>click to see my role</span>
                     </div>    
 
-                    <div class="contributor">
+                    <div class="contributor-link" data-tab="2">
                         <h3>Samantha Soucy</h3>
                         <img src="https://ca.slack-edge.com/T4JUEB3ME-UDATRFNEA-34ab7e32301b-48" alt="Samantha Soucy">                    
-                        <p>Backend Developer<br>-<br>Building components and features so that the database can communicate with the browser and when combined with frontend code, helps to create a functional and seamless user experience.</p>
-                        <span>...</span>
+                        <div class="contributor-item  text-hidden" data-tab="2">
+                            Backend Developer<br>-<br>Building components and features so that the database can communicate with the browser and when combined with frontend code, helps to create a functional and seamless user experience.
+                        </div><br>
+                        <span>click to see my role</span>
                     </div> 
 
-                    <div class="contributor">
+                    <div class="contributor-link" data-tab="3">
                         <h3>Elan Riznis</h3>
                         <img src="https://ca.slack-edge.com/T4JUEB3ME-UEXE8DE58-aa167852d545-48" alt="Elan Riznis">                       
-                        <p></p>
-                        <span>...</span>
+                        <div class="contributor-item  text-hidden" data-tab="3">
+
+                        </div><br>
+                        <span>click to see my role</span>
                     </div>
 
-                    <div class="contributor">
+                    <div class="contributor-link" data-tab="4">
                         <h3>Dwayne Pearson</h3>
                         <img src="https://avatars1.githubusercontent.com/u/47198585?s=460&v=4" alt="Dwayne Pearson">                      
-                        <p>UI<br>-<br>Creating components that give functionality and scalability to the pages without compromising on visual appeal.</p>
-                        <span>...</span>
+                        <div class="contributor-item  text-hidden" data-tab="4">
+                            UI<br>-<br>Creating components that give functionality and scalability to the pages without compromising on visual appeal.
+                        </div><br>
+                        <span>click to see my role</span>
                     </div>
 
                 </div>
@@ -67,10 +73,12 @@
 
                     <p>Now is the perfect time to invest your time, care, and attention into ensuring that no mother is left without adequate care for her baby. If you are an expecting mother, driver, or potential volunteer, click the button below and join us in making pregnancy, birth, and childhood safer experiences in Uganda.</p>
 
-                    <button id="btn" class="btn">Join Us Here!</button>
+                    <a href="http://google.com" style ="text-decoration:none;"><button id="btn" class="btn">Join Us Here!</button></a>
                 </div>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script src="./components/Teamtext.js"></script>
     </body>
     <footer>
         <p>Copyright 2019</p>

@@ -1,21 +1,40 @@
 .contributors {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  cursor: pointer;
   width: 100%;
   
 
-  div {
-    padding: 5%;
-    width: 24%;
-    // border: 2px solid red;
+  .contributor-link{
+    margin: 5%;
+    width: 20%;
+    
   }
+
+  img {
+    height: 100px;
+    width: 100px;
+    border-radius: 8%;
+  }
+
 }
 
 .about-cta {
   margin: 20px 0;
 
+  .about-middle-img {
+  height: auto;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+ 
+    @media @mobile{
+      display: none;
+    }
+  }
+
   p{
-    margin:0px 80px 40px;  
+    margin:10px 80px 40px;  
     
   }
 }
@@ -25,7 +44,7 @@
     flex-flow: wrap; 
     
 
-    div {
+    .contributor-link {
       align-self: baseline;
       padding: 5% ;
       width: 40%;
@@ -37,30 +56,14 @@
 
 @media @mobile{
   .contributors{
-    flex-direction: column; 
-    
+    flex-direction: column;
 
-    div {
+    .contributor-link {
       width: 100%;
+      margin: 0;
+    
     }
     
   }
   
-}
-
-.contributors div img {
-  height: 100px;
-  width: 100px;
-}
-
-
-.about-middle-img {
-  height: auto;
-  width: 100%;
-  margin: 20px 0;
-  border-radius: 8px;
- 
-  @media @mobile{
-    display: none;
-  }
 }
